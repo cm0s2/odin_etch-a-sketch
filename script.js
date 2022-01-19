@@ -14,7 +14,7 @@ const resetBtn = document.querySelector('#reset');
 resetBtn.addEventListener('click', createDrawingArea);
 
 function createDrawingArea(size) {
-    while (isNaN(size) || size === 0 || size === null) size = prompt('Size: ');
+    while (isNaN(size) || size === 0 || size === null) size = prompt('Enter grid size:', 10);
 
     // Reset container
     canvas.innerHTML = '';
@@ -33,4 +33,4 @@ function createDrawingArea(size) {
     }
 }
 
-createDrawingArea(20);
+createDrawingArea(10);
