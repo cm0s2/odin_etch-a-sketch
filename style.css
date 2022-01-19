@@ -1,10 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
 body {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    min-height: 100vh;
+
 }
 
-#container {
+button {
+    margin-top: 20px;
+    border: 1px solid #e76f51;
+    background-color: #e76f51;
+    color: white;
+    border-radius: 8px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    padding: 8px 16px;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: #e76f51;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+#canvas {
     display: flex;
     flex-wrap: wrap;
 
@@ -18,7 +47,7 @@ body {
 }
 
 .pixel {
-    background-color: gray;
+    background-color: #e9c46a;
     padding: 0px;
     margin: 0px;
 }
